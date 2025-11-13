@@ -4,7 +4,7 @@ import models.Car;
 import validaciones.Validators;
 import org.junit.jupiter.api.Test;
 
-import controllers.CarController;
+import controller.CartController;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
@@ -13,11 +13,11 @@ import java.util.List;
 
 public class CartControllerTest {
 
-    private CarController controller;
+    private CartController controller;
 
     @BeforeEach
     public void setUp() {
-        controller = new CarController();
+        controller = new CartController();
     }
 
     public static Car[] makeCarsList() {
