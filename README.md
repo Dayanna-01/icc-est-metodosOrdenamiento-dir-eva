@@ -127,67 +127,8 @@ public class CarController {
     }
 }
 ```
-
-public class SortingAlgorithms {
-    public static void selectionSortNombres(String[] arr) {
-        int n = arr.length;
-        for (int i = 0; i < n - 1; i++) {
-            int min_idx = i;
-            for (int j = i + 1; j < n; j++) {
-                if (arr[j].compareTo(arr[min_idx]) < 0) {
-                    min_idx = j;
-                }
-            }
-            String temp = arr[min_idx];
-            arr[min_idx] = arr[i];
-            arr[i] = temp;
-        }
-    }
-}
-
-————————————-
-
-BURBUJA MEJORADO 
-
-Edades 
-
-public class SortingAlgorithms {
-    public static void bubbleSortMejoradoEdades(int[] arr) {
-        int n = arr.length;
-        boolean swapped;
-        for (int i = 0; i < n - 1; i++) {
-            swapped = false;
-            for (int j = 0; j < n - i - 1; j++) {
-                if (arr[j] > arr[j + 1]) {
-                    int temp = arr[j];
-                    arr[j] = arr[j + 1];
-                    arr[j + 1] = temp;
-                    swapped = true;
-                }
-            }
             if (!swapped) break;
         }
     }
-}
 
-
-Nombres 
-
-public class SortingAlgorithms {
-    public static void bubbleSortMejoradoNombres(String[] arr) {
-        int n = arr.length;
-        boolean swapped;
-        for (int i = 0; i < n - 1; i++) {
-            swapped = false;
-            for (int j = 0; j < n - i - 1; j++) {
-                if (arr[j].compareTo(arr[j + 1]) > 0) {
-                    String temp = arr[j];
-                    arr[j] = arr[j + 1];
-                    arr[j + 1] = temp;
-                    swapped = true;
-                }
-            }
-            if (!swapped) break;
-        }
-    }
 }
